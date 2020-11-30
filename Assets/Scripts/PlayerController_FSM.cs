@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController_FSM : MonoBehaviour
 {
@@ -24,7 +22,7 @@ public class PlayerController_FSM : MonoBehaviour
         get { return rbody; }
     }
 
-    #endregion
+    #endregion Player Variables
 
     private PlayerBaseState currentState;
 
@@ -50,7 +48,7 @@ public class PlayerController_FSM : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         currentState.Update(this);
     }

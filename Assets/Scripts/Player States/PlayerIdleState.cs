@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerIdleState : PlayerBaseState
 {
@@ -11,7 +9,6 @@ public class PlayerIdleState : PlayerBaseState
 
     public override void OnCollisionEnter(PlayerController_FSM player)
     {
-        
     }
 
     public override void Update(PlayerController_FSM player)
@@ -22,7 +19,7 @@ public class PlayerIdleState : PlayerBaseState
             player.TransitionToState(player.JumpingState);
         }
 
-        if(Input.GetButtonDown("Duck"))
+        if (Input.GetButtonDown("Duck"))
         {
             player.TransitionToState(player.DuckingState);
         }

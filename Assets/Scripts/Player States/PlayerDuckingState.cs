@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerDuckingState : PlayerBaseState
 {
@@ -14,7 +12,6 @@ public class PlayerDuckingState : PlayerBaseState
 
     public override void OnCollisionEnter(PlayerController_FSM player)
     {
-        
     }
 
     public override void Update(PlayerController_FSM player)

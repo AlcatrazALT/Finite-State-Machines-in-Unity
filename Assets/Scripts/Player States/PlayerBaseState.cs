@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public abstract class PlayerBaseState
+﻿public abstract class PlayerBaseState
 {
     public abstract void EnterState(PlayerController_FSM player);
 
